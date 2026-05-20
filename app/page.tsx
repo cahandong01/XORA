@@ -41,15 +41,14 @@ const WA_URL = `https://wa.me/${WA_NUMBER}?text=Halo%20${encodeURIComponent(APP_
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
-  visible: (i: number = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
-      delay: i * 0.08,
       ease: "easeOut",
     },
-  }),
+  },
 };
 
 const fadeIn = {
@@ -663,7 +662,7 @@ function Section5() {
 /* ─── Reusable Components ─── */
 function Card({ icon, title, desc, i }: { icon: React.ReactNode; title: string; desc: string; i: number }) {
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={i}
+    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
       className="group p-6 bg-white border border-[#e8e1d6] rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 cursor-default">
       <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-[#5E8E3E]/10 text-[#5E8E3E] group-hover:bg-[#5E8E3E] group-hover:text-white transition-all duration-300">{icon}</div>
       <h3 className="mt-4 font-semibold text-[15px] text-[#3B2F2F]">{title}</h3>
@@ -674,7 +673,7 @@ function Card({ icon, title, desc, i }: { icon: React.ReactNode; title: string; 
 
 function FeatureCard({ icon, title, desc, i }: { icon: React.ReactNode; title: string; desc: string; i: number }) {
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={i}
+    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp}>
       className="group relative p-6 bg-white border border-[#e8e1d6] rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 cursor-default overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#5E8E3E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-2xl" />
       <div className="flex items-start gap-4">
