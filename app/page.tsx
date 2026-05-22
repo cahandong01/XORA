@@ -30,11 +30,11 @@ const APP_NAME = "Platform Wisata";
 // TODO: Ganti dengan tagline aplikasi lo
 const APP_TAGLINE = "Platform untuk pengelolaan tempat wisata yang menggunakan konsep SaaS, ERP, Multi Cabang dan Multi Tenant yang terintegrasi & realtime.";
 // TODO: Ganti dengan nomor WA lo (format: 628XXXXXXXXXX)
-const WA_NUMBER = "628123456789";
+const WA_NUMBER = "6289525841982";
 // TODO: Ganti dengan email lo
-const APP_EMAIL = "hello@platformwisata.id";
+const APP_EMAIL = "cahandong01@gmail.com";
 // TODO: Ganti dengan lokasi lo
-const APP_LOCATION = "Jakarta, Indonesia";
+const APP_LOCATION = "Magelang, Indonesia";
 // ============================================================
 
 const WA_URL = `https://wa.me/${WA_NUMBER}?text=Halo%20${encodeURIComponent(APP_NAME)}%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20platform%20ini.`;
