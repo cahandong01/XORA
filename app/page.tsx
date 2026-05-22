@@ -403,7 +403,7 @@ export default function Home() {
                   <div>
                     <p className="text-xs text-[#3B2F2F]/40 mb-0.5">WhatsApp</p>
                     {/* TODO: Ganti dengan nomor WA lo di konstanta WA_NUMBER di atas */}
-                    <p className="text-sm font-semibold text-[#3B2F2F] group-hover:text-[#5E8E3E] transition-colors duration-200">+62 812-3456-789 (dummy)</p>
+                    <p className="text-sm font-semibold text-[#3B2F2F] group-hover:text-[#5E8E3E] transition-colors duration-200">+62 895-2584-1982</p>
                   </div>
                 </a>
 
