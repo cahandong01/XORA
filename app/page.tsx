@@ -514,7 +514,7 @@ export default function Home() {
                   <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-[#F5F1E8]/60 hover:text-[#25D366] transition-colors duration-200">
                     <MessageCircle size={15} className="flex-shrink-0" />
                     {/* TODO: Ganti nomor dummy ini */}
-                    +62 812-3456-789
+                    +62 895-2584-1982
                   </a>
                 </li>
                 <li>
