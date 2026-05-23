@@ -26,9 +26,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // ============================================================
 // TODO: Ganti dengan nama aplikasi lo
-const APP_NAME = "Platform Wisata";
+const APP_NAME = "XORA";
 // TODO: Ganti dengan tagline aplikasi lo
-const APP_TAGLINE = "Platform untuk pengelolaan tempat wisata yang menggunakan konsep SaaS, ERP, Multi Cabang dan Multi Tenant yang terintegrasi & realtime.";
+const APP_TAGLINE = "Platform ERP wisata modern untuk mengelola tiket, parkir, wahana, tenant, dan operasional multi lokasi secara terintegrasi, real-time, dan scalable.";
 // TODO: Ganti dengan nomor WA lo (format: 628XXXXXXXXXX)
 const WA_NUMBER = "6289525841982";
 // TODO: Ganti dengan email lo
@@ -58,8 +58,8 @@ export default function Home() {
     <main className="bg-[#F5F1E8] text-[#3B2F2F] scroll-smooth font-sans">
 
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1F2520]/85 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.15)]">
-        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1B211D]/60 backdrop-blur-2xl border-b border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+        <div className="max-w-7xl mx-auto px-8 h-[72px] flex items-center justify-between">
 
           {/* LOGO — TODO: Ganti div ini dengan <img src="/logo.png" /> atau komponen logo lo */}
          <div className="flex items-center">
@@ -114,9 +114,9 @@ export default function Home() {
 
               <motion.div variants={fadeUp} custom={3} className="mt-6 flex gap-6">
                 {[
-                  { val: "48+", label: "Destinasi Aktif" },
-                  { val: "12K+", label: "Pengunjung/Bulan" },
-                  { val: "99.9%", label: "Uptime" },
+                  { val: "Ticketing", label: "QR & Validasi Real-Time" },
+                  { val: "Multi Lokasi", label: "Cabang & Tenant Terintegrasi" },
+                  { val: "Monitoring", label: "Dashboard Operasional Terpusat" },
                 ].map(({ val, label }) => (
                   <div key={label}>
                     <p className="text-xl font-bold text-[#3B2F2F]">{val}</p>
@@ -140,7 +140,17 @@ export default function Home() {
             <motion.div initial="hidden" animate="visible" variants={fadeIn} className="flex justify-center md:justify-end">
               <div className="relative w-full max-w-[480px]">
                 <div className="absolute inset-0 bg-[#5E8E3E]/10 blur-3xl rounded-3xl scale-95" />
-                <div className="relative bg-white rounded-2xl p-3 shadow-2xl border border-[#e8e1d6]">
+                <div className="
+                    relative
+                    bg-white/90
+                    rounded-[28px]
+                    p-3
+                    shadow-[0_25px_80px_rgba(0,0,0,0.18)]
+                    border
+                    border-white/40
+                    backdrop-blur-xl
+                    overflow-hidden
+                  ">
                   <div className="flex items-center gap-1.5 px-2 pb-2">
                     <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
                     <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
@@ -149,7 +159,27 @@ export default function Home() {
                       <span className="text-[10px] text-gray-400">app.platformwisata.id/dashboard</span>
                     </div>
                   </div>
-                  <img src="/dashboard.png" alt="Dashboard" className="rounded-xl w-full h-[300px] object-cover object-top" />
+                  <img
+                    src="/dashboard.png"
+                    alt="Dashboard"
+                    className="
+                    rounded-[20px]
+                    w-full
+                    h-[320px]
+                    object-cover
+                    object-top
+                    scale-[1.01]
+                    "
+                  />
+                  <div className="
+                    absolute
+                    inset-0
+                    bg-gradient-to-tr
+                    from-white/10
+                    via-transparent
+                    to-white/20
+                    pointer-events-none
+                  "/>
                 </div>
                 <motion.div
                   initial={{ opacity: 0, y: 10, x: 10 }} animate={{ opacity: 1, y: 0, x: 0 }}
@@ -441,13 +471,18 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#3B2F2F] text-[#F5F1E8]">
+      <footer className="relative overflow-hidden bg-[#1B211D] text-[#F5F1E8]">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-[-120px] right-[-80px] w-[420px] h-[420px] bg-[#7DB84C]/10 rounded-full blur-3xl" />
+
+          <div className="absolute bottom-[-140px] left-[-100px] w-[380px] h-[380px] bg-[#c8b97a]/10 rounded-full blur-3xl" />
+        </div>
         <div className="max-w-6xl mx-auto px-6 pt-14 pb-8">
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-[1.7fr_1fr_1fr_1.1fr] gap-x-20 gap-y-10">
 
             {/* Kolom 1 — Brand */}
-            <div className="col-span-2 md:col-span-1">
+            <div className="max-w-7xl mx-auto px-8 lg:px-12">
               {/* TODO: Ganti div logo ini dengan logo final lo */}
              <div className="mb-4">
               <img
